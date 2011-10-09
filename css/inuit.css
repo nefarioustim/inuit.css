@@ -368,9 +368,12 @@ img{
 	/* Give it some text styles to offset alt text */
 	font-style:italic;
 	color:#c00;
+	/* Fix image interpolation */
+	image-rendering:optimizeQuality;  /* Firefox 3.6+; default behavior is identical, no need to specify */
+	-ms-interpolation-mode:bicubic; /* IE */
 }
-img.left	{ margin:0 20px 0 0; }
-img.right	{ margin:0 0 0 20px; }
+img.left{ margin:0 20px 0 0; }
+img.right{ margin:0 0 0 20px; }
 
 /*--- FLASH/VIDEO ---*/
 object,
